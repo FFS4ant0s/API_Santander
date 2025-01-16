@@ -1,47 +1,39 @@
-        #API_Santander
-Principais Tecnologias
-Java 17: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
-Spring Boot 3: Trabalharemos com a mais nova versão do Spring Boot, que maximiza a produtividade do desenvolvedor por meio de sua poderosa premissa de autoconfiguração;
-Spring Data JPA: Exploraremos como essa ferramenta pode simplificar nossa camada de acesso aos dados, facilitando a integração com bancos de dados SQL;
-OpenAPI (Swagger): Vamos criar uma documentação de API eficaz e fácil de entender usando a OpenAPI (Swagger), perfeitamente alinhada com a alta produtividade que o Spring Boot oferece;
-Railway: facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço e pipelines de CI/CD.
+# Projeto: API com Java e Spring Boot 🚀
 
-    #Link do Figma
-O Figma foi utilizado para a abstração do domínio desta API, sendo útil na análise e projeto da solução.
+Este repositório contém uma aplicação desenvolvida com tecnologias modernas e robustas para criar APIs eficientes, escaláveis e bem documentadas.
 
-Diagrama de Classes (Domínio da API)
-    classDiagram
-  class User {
-    -String name
-    -Account account
-    -Feature[] features
-    -Card card
-    -News[] news
-  }
+## Tecnologias Utilizadas 🛠️
 
-  class Account {
-    -String number
-    -String agency
-    -Number balance
-    -Number limit
-  }
+- **Java 17**  
+  Utilizamos a versão LTS mais recente do Java para tirar proveito das últimas inovações e da robustez que essa linguagem amplamente utilizada oferece. 
 
-  class Feature {
-    -String icon
-    -String description
-  }
+- **Spring Boot 3**  
+  Trabalhamos com a versão mais recente do Spring Boot, que maximiza a produtividade do desenvolvedor com sua poderosa premissa de autoconfiguração.
 
-  class Card {
-    -String number
-    -Number limit
-  }
+- **Spring Data JPA**  
+  Exploramos essa ferramenta para simplificar a camada de acesso aos dados, tornando a integração com bancos de dados SQL mais ágil e eficiente.
 
-  class News {
-    -String icon
-    -String description
-  }
+- **OpenAPI (Swagger)**  
+  Criamos uma documentação de API eficaz e fácil de entender com o uso do OpenAPI (Swagger), proporcionando alinhamento com a alta produtividade que o Spring Boot oferece.
 
-  User "1" *-- "1" Account
-  User "1" *-- "N" Feature
-  User "1" *-- "1" Card
-  User "1" *-- "N" News
+- **Railway**  
+  Facilitamos o deploy e monitoramento da aplicação na nuvem, utilizando os serviços de bancos de dados e pipelines de CI/CD fornecidos pela plataforma.
+
+## Funcionalidades 🌟
+
+1. API RESTful com endpoints bem estruturados.
+2. Integração com bancos de dados SQL utilizando JPA.
+3. Documentação interativa da API com Swagger/OpenAPI.
+4. Deploy automatizado e monitoramento simplificado com Railway.
+
+## Como Executar o Projeto ▶️
+
+### Pré-requisitos
+- Java 17 instalado.
+- Maven ou Gradle configurado no sistema.
+- IDE de sua preferência (ex.: IntelliJ IDEA, Eclipse).
+
+### Passos
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
