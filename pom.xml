@@ -19,6 +19,7 @@
 
     <properties>
         <java.version>17</java.version>
+        <spring.profiles.active>dev</spring.profiles.active> <!-- Aqui, o perfil pode ser alterado para "prd" conforme necessário -->
     </properties>
 
     <dependencies>
