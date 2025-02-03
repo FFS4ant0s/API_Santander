@@ -1,15 +1,15 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://monorail.proxy.rlwy.net:52702/railway
-    username: postgres
-    password: eSTciMlgokUjIkaBBIHLMlPbdqwdXpwF
-  jpa:
-    open-in-view: false
-    hibernate:
-      ddl-auto: create
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-  logging:
-    level:
-      org.springframework.jdbc.core: DEBUG
-      org.hibernate.SQL: DEBUG
-      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+# spring:
+#   datasource:
+#     url: jdbc:postgresql://monorail.proxy.rlwy.net:52702/railway
+#     username: postgres
+#     password: eSTciMlgokUjIkaBBIHLMlPbdqwdXpwF
+#   jpa:
+#     open-in-view: false
+#     hibernate:
+#       ddl-auto: update
+#       dialect: org.hibernate.dialect.PostgreSQLDialect
+#   logging:
+#     level:
+#       org.springframework.jdbc.core: DEBUG
+#       org.hibernate.SQL: DEBUG
+#       org.hibernate.type.descriptor.sql.BasicBinder: TRACE
