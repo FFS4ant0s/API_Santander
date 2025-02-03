@@ -1,9 +1,15 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
-    username: ${PGUSER}
-    password: ${PGPASSWORD}
+    url: jdbc:postgresql://monorail.proxy.rlwy.net:52702/railway
+    username: postgres
+    password: eSTciMlgokUjIkaBBIHLMlPbdqwdXpwF
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: validate # Usualmente, em produção, é melhor ter 'validate' para não modificar a estrutura do banco automaticamente
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  logging:
+    level:
+      org.springframework.jdbc.core: DEBUG
+      org.hibernate.SQL: DEBUG
+      org.hibernate.type.descriptor.sql.BasicBinder: TRACE
